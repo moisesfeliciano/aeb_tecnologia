@@ -1,144 +1,43 @@
-# Site básico responsivo em HTML, CSS, JS sem Bootstrap.
+# Site Institucional Responsivo - A&B Tecnologia
 
-## Adicionando favicon no site e mudança no título
+Este é um projeto de um site institucional básico e responsivo para uma empresa fictícia chamada "A&B Tecnologia". O site foi desenvolvido utilizando HTML, CSS e JavaScript (com jQuery), sem o uso de frameworks CSS como o Bootstrap.
 
-### Código do site completo:
+## ✨ Funcionalidades
 
+*   **Layout Responsivo:** O site se adapta a diferentes tamanhos de tela, desde desktops a dispositivos móveis.
+*   **Menu Hambúrguer:** Em telas menores, o menu de navegação se transforma em um menu "hambúrguer" funcional.
+*   **Estrutura Semântica:** Utilização de tags HTML5 como `<header>`, `<nav>`, `<section>`, `<article>` e `<footer>`.
+*   **Seções:**
+    *   Home (Banner)
+    *   A Empresa
+    *   Soluções Web
+    *   Depoimentos
+    *   Formulário de Newsletter
 
-'''html
+## 🚀 Tecnologias Utilizadas
 
+*   **HTML5**
+*   **CSS3**
+*   **JavaScript**
+*   **jQuery 3.2.1** para manipulação do DOM (efeito do menu).
+*   **Google Fonts** (Roboto).
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>A&B Tecnologia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon 32x32.ico" />
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
-    <!--http://dontpad.com/wd10-->
-    <script src="jquery-3.2.1.min.js"></script>
-    
-    <script>
-        
-        $(document).ready(function(){
-           
-            $("#btn-menu").click(function(){
-                $("#menu").slideToggle();
-            });
-            
-        });
-        
-    </script>
-    
-</head>
-<body>
-    
-    <header id="topo">
-        
-        <div class="total">
-            <div id="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            
-            <div id="btn-menu">
-                <div class="barra"></div>
-                <div class="barra"></div>
-                <div class="barra"></div>
-            </div>
-            
-            <nav id="menu">
-                <a href="#">HOME</a>
-                <a href="#">QUEM SOMOS</a>
-                <a href="#">SERVIÇOS</a>
-                <a href="#">LOCALIZAÇÃO</a>
-                <a href="#">CONTATO</a>
-            </nav>
-            
-        </div>
-        
-    </header>
-    
-    <div id="banner">
-       <img src="img/banner.jpg" alt="">
-        
-        <div class="total">
-            <article id="destaque">
-                <h1>Soluções em Tecnologias Web</h1>
+## 📂 Estrutura de Arquivos
 
-                <p>Aliquam consequat, dui sit amet consectetur viverra, odio sem iaculis quam, quis facilisis orci elit eget urna. Aenean dictum iaculis magna, sit amet porta magna vehicula consequat. Donec semper viverra vehicula. Pellentesque a sapien quis purus imperdiet placerat.</p>
-            </article>
-        </div>
-        
-    </div>
-    
-    
-    <div class="total">
-                                
-        <section class="coluna">
-            <h2>A Empresa</h2>
-            <img src="img/a-empresa.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed venenatis metus vitae metus euis mod, eu venenatis elit pretium. </p>
-            
-            <p>Etiam sapien felis, semper eu vehicula nec, consectetur sed lectus. Vestibulum iaculis, lectus </p>
-            
-            <a href="#" class="botao">Saiba mais</a>
-        </section>
-        
-        <section class="coluna">
-            <h2>Soluções Web</h2>
-            <img src="img/solucoes-web.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed venenatis metus vitae metus euis mod, eu venenatis elit pretium. </p>
+```
+/aeb_tecnologia
+├── img/
+│   ├── logo.png
+│   ├── banner.jpg
+│   └── ... (outras imagens)
+├── jquery-3.2.1.min.js
+├── style.css
+└── index.html
+```
 
-            <p>Etiam sapien felis, semper eu vehicula nec, consectetur sed lectus. Vestibulum iaculis, lectus </p>
-            
-            <a href="#" class="botao">Saiba mais</a>
-        </section>
-        
-        <section class="coluna">
-            <h2>Depoimentos</h2>
-            
-            <img src="img/depoimentos.jpg" alt="">            
-            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed venenatis metus vitae metus euis mod, eu venenatis elit pretium. </p>
+## 🏁 Como Executar
 
-            <p>Etiam sapien felis, semper eu vehicula nec, consectetur sed lectus. Vestibulum iaculis, lectus </p>
-            
-            <a href="#" class="botao">Saiba mais</a>
-        </section>
-        
-        <section class="coluna">
-            <h2>NewsLetter</h2>
-            <img src="img/newsletter.jpg" alt="">
-            
-            <form>
-                <label>
-                    Nome:<br>
-                    <input type="text">
-                </label>
-                       
-                <label>
-                    E-mail:<br>
-                    <input type="text">
-                </label>
-                
-                <input type="submit" value="Enviar" class="botao" id="enviar">
-            </form>
-            
-        </section>
-    </div>
-    
-    <div class="clearfix"></div>
-    
-    <footer id="rodape">
-        Av. Rio Branco, 185 - Sala 901 - Centro - Rio de Janeiro / RJ<br>
-        (21) 2233-4455 / (21) 9988-7766
-    </footer>
-   
-    
-</body>
-</html>
+1.  Clone ou baixe este repositório.
+2.  Abra o arquivo `index.html` em seu navegador de preferência.
 
-'''
-
+Não é necessário um servidor web para visualizar este projeto, mas ele está pronto para ser hospedado.
